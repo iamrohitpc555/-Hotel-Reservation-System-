@@ -1,4 +1,4 @@
-package org.example;
+package org.HotelReservation;
 
 import static org.junit.Assert.assertTrue;
 
