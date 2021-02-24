@@ -1,32 +1,39 @@
 package org.example;
 
-public class Hotel
-{
-    private String hotelName;
-    private int regularRate;
+public class Hotel {
 
-    public Hotel(String hotelName , int regularRate)
-    {
-        this.hotelName= hotelName;
-        this.regularRate= regularRate;
-    }
+	private String hotelName;
+	private int weeklyRate;
+	private int weekEndRate;
 
-    public void setHotelName(String hotelName)
-    {
-        this.hotelName = hotelName;
-    }
+	public Hotel(String hotelName, int weeklyRate, int weekEndRate) {
+		this.hotelName = hotelName;
+		this.weeklyRate = weeklyRate;
+		this.weekEndRate = weekEndRate;
 
-    public String getHotelName()
-    {
-        return hotelName;
-    }
+	}
 
-    public void setRegularRate(int regularRate)
-    {
-        this.regularRate = regularRate;
-    }
+	public void setHotelName(String hotelName) {
+		this.hotelName = hotelName;
+	}
 
-    public int getRegularRate() {
-        return regularRate;
-    }
+	public String getHotelName() {
+		return hotelName;
+	}
+
+	public void setWeeklyRate(int weeklyRate) {
+		this.weeklyRate = weeklyRate;
+	}
+
+	public int getWeeklyRate() {
+		return weeklyRate;
+	}
+
+	public void setWeekEndRate(int weekEndRate) {
+		this.weekEndRate = weekEndRate;
+	}
+
+	public int getWeekEndRate() {
+		return weekEndRate;
+	}
 }
